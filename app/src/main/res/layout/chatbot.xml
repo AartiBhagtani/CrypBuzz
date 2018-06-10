@@ -1,13 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Chatbot">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/addBtn">
+
+        <ListView
+            android:id="@+id/messageListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="58dp"
+            android:divider="@android:color/transparent"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            tools:listitem="@layout/card_view" />
+
+        />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Lets Chat brother"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/photoPickerButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:background="@drawable/cube"
+            app:srcCompat="@drawable/ic_action_name_gallery" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/photoPickerButton"
+
+            android:background="#fff"
+            android:hint="@string/text_hint"
+            android:minHeight="50dp"
+            android:padding="7dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/fab_img"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back_fab"
+            android:padding="8dp"
+            android:tint="#fff"
+            app:srcCompat="@drawable/mic_24dp" />
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -78,8 +78,32 @@ public class Price extends AppCompatActivity {
             RequestQueue rQueue = Volley.newRequestQueue(Price.this);
             rQueue.add(request);
         }
+        urlExecute();
     }
-
+    void urlExecute(){
+        String url = "http://vanquishers.pythonanywhere.com/crypto/bitcoin/1528571935";
+        StringRequest request = new StringRequest(url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String string) {
+                try{
+                    TextView bit=(TextView) findViewById(R.id.textView21);
+                    bit.setText(string);
+                }
+                catch(Exception e){
+                    Toast.makeText(getApplicationContext(), "Some error!!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError volleyError) {
+                        Toast.makeText(getApplicationContext(), " error occurred!!", Toast.LENGTH_SHORT).show();
+                        dialog.dismiss();
+                    }
+                });
+        RequestQueue rQueue = Volley.newRequestQueue(Price.this);
+        rQueue.add(request);
+    }
     void parseJsonData(String jsonString) {
         try {
             JSONObject object = new JSONObject(jsonString);
