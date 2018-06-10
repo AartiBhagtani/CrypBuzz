@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void alert(View v) {
         if (v.getId() == R.id.alert) {
-            Intent i = new Intent(MainActivity.this, Alert.class);
-            startActivity(i);
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://coinmarketalert.com/"));
+            startActivity(intent);
         }
     }
 
