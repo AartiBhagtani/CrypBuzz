@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "973523136881",
+    "firebase_url": "https://cryptbuzz-5fb30.firebaseio.com",
+    "project_id": "cryptbuzz-5fb30",
+    "storage_bucket": "cryptbuzz-5fb30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973523136881:android:47ae4535ff910b0b",
+        "android_client_info": {
+          "package_name": "com.example.navin.cryptbuzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973523136881-adsump5jq69qq320hb093df0s9b36096.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.navin.cryptbuzz",
+            "certificate_hash": "007149866fdf2cb87930432a7986d011438f59b7"
+          }
+        },
+        {
+          "client_id": "973523136881-g8elm97a22ntuo93qgl1346ipibfpevk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "973523136881-g8elm97a22ntuo93qgl1346ipibfpevk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd1viru9dLw0b7VGrg4fPJ5f7XgRw3zkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973523136881-g8elm97a22ntuo93qgl1346ipibfpevk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
